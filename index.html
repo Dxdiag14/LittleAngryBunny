@@ -40,7 +40,7 @@
     style="font-family: 'Source Sans Pro', sans-serif"
   >
     <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <nav id="header" class="fixed w-full z-30 top-0 text-white bg-white">
       <div
         class="
           w-full
@@ -57,7 +57,7 @@
           <a
             class="
               toggleColour
-              text-white
+              text-gray-800
               no-underline
               hover:no-underline
               font-bold
@@ -205,7 +205,6 @@
                 lg:mx-0
                 hover:underline
                 bg-white
-                text-gray-800
                 font-bold
                 rounded-full
                 mt-4
@@ -220,6 +219,8 @@
                 hover:scale-105
                 duration-300
                 ease-in-out
+                gradient
+                text-white
               "
             >
               Buy now
@@ -816,14 +817,14 @@
           />
         </a>
 
-        <a href="https://www.babyeverdoge.io/" target="_blank">
+        <!-- <a href="https://www.babyeverdoge.io/" target="_blank">
           <img
             width="70"
             src="assets/baby-ever-doge-logo.png"
             alt="baby-ever-doge-logo"
             title="Baby Ever Doge"
           />
-        </a>
+        </a> -->
       </div>
 
       <div
@@ -901,48 +902,48 @@
         $("#video-demo").trigger("pause");
       });
 
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
+      // var scrollpos = window.scrollY;
+      // var header = document.getElementById("header");
+      // var navcontent = document.getElementById("nav-content");
+      // var navaction = document.getElementById("navAction");
+      // var brandname = document.getElementById("brandname");
+      // var toToggle = document.querySelectorAll(".toggleColour");
 
-      document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
+      // document.addEventListener("scroll", function () {
+      //   /*Apply classes for slide in bar*/
+      //   scrollpos = window.scrollY;
 
-        if (scrollpos > 10) {
-          header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
-          navaction.classList.add("gradient");
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-white");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("text-white");
-          }
-          header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-70");
-          navcontent.classList.add("bg-white");
-        } else {
-          header.classList.remove("bg-white");
-          navaction.classList.remove("gradient");
-          navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-white");
-            toToggle[i].classList.remove("text-gray-800");
-          }
+      //   if (scrollpos > 10) {
+      //     header.classList.add("bg-white");
+      //     navaction.classList.remove("bg-white");
+      //     navaction.classList.add("gradient");
+      //     navaction.classList.remove("text-gray-800");
+      //     navaction.classList.add("text-white");
+      //     //Use to switch toggleColour colours
+      //     for (var i = 0; i < toToggle.length; i++) {
+      //       toToggle[i].classList.add("text-gray-800");
+      //       toToggle[i].classList.remove("text-white");
+      //     }
+      //     header.classList.add("shadow");
+      //     navcontent.classList.remove("bg-gray-70");
+      //     navcontent.classList.add("bg-white");
+      //   } else {
+      //     header.classList.remove("bg-white");
+      //     navaction.classList.remove("gradient");
+      //     navaction.classList.add("bg-white");
+      //     navaction.classList.remove("text-white");
+      //     navaction.classList.add("text-gray-800");
+      //     //Use to switch toggleColour colours
+      //     for (var i = 0; i < toToggle.length; i++) {
+      //       toToggle[i].classList.add("text-white");
+      //       toToggle[i].classList.remove("text-gray-800");
+      //     }
 
-          header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-70");
-        }
-      });
+      //     header.classList.remove("shadow");
+      //     navcontent.classList.remove("bg-white");
+      //     navcontent.classList.add("bg-gray-70");
+      //   }
+      // });
     </script>
     <script>
       /*Toggle dropdown list*/
