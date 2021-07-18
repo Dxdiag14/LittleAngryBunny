@@ -20,7 +20,7 @@
     --card-width: 80%;
     --card-max-width: 300px;
     --card-height: 450px;
-    --carousel-min-width: 100px;
+    --carousel-min-width: 400px;
     z-index: 1;
     position: relative;
     margin: 0 auto;
