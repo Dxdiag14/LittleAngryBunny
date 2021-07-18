@@ -20,11 +20,11 @@
     --card-width: 80%;
     --card-max-width: 300px;
     --card-height: 450px;
-    --carousel-min-width: 600px;
+    --carousel-min-width: 100px;
     z-index: 1;
     position: relative;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     height: var(--card-height);
     min-width: var(--carousel-min-width);
     transition: filter .3s ease;
