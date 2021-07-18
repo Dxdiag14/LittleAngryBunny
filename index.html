@@ -16,6 +16,8 @@
     <link rel="image_src" type="image/webp" href="assets/main-logoV2.jpg" />
 
     <link rel="icon" href="assets/main-logoV2.jpg" />
+  
+    <link rel="stylesheet" href="styles.css">
     <!-- Tailwind -->
     <link
       rel="stylesheet"
@@ -31,8 +33,18 @@
         scroll-behavior: smooth;
       }
       .gradient {
-        background: linear-gradient(90deg, #002987 0%, #3336d5 70%);
+        background: linear-gradient(90deg, #002987 0%, #4043f5 70%);
       }
+      .carousel{
+  margin-top: 50px;
+}
+.carousel-inner{
+  height: 100px;
+}
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}
     </style>
   </head>
   <body
@@ -260,23 +272,21 @@
             md:text-left
           "
         >
-          <p class="uppercase tracking-loose w-full">
-            What is Little Angry Bunny V2?
-          </p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
           <img class="object-contain h-10 w-10 float-left mt-3" src="assets/main-logoV2.jpg"/>
-            Little Angry Bunny V2 is decentralized BEP-20 token.
+            Little Angry Bunny V2
           </h1>
           <p class="leading-normal text-2xl mb-8">
-            Inspired by the little coins, LAB is a 86% community driven token
-            with anti whale features to prevent whale dumps and protect the
-            holders.
+            is committed to provide a decentralized transaction network under Binance Smart Chain (BEP-20) 
+            with a maximum circulating supply of 10 septillion. 
+            There is no main owner of the LAB token. It is purely in favor to all the admins, 
+            moderators, and the community's wise decision-making.
           </p>
 
           <!-- buttons -->
 
           <div class="flex flex-row gap-x-3 lg:gap-x-6 mx-auto lg:mx-1">
-            <a href="https://t.me/LittleAngryBunnyGlobal" target="_blank">
+            <a href="https://fighluna.wixsite.com/mysite" target="_blank">
               <button
                 class="
                   mx-auto
@@ -298,7 +308,7 @@
                   ease-in-out
                 "
               >
-                Telegram
+                Temporary website
               </button>
             </a>
 
@@ -330,6 +340,8 @@
                 Chart
               </button>
             </a>
+            
+
             <!-- Modal -->
             <div x-data="{ showModal : false }">
               <!-- Button -->
@@ -408,7 +420,7 @@
                   <!-- Video  -->
                   <video width="1000" controls class="mx-auto" id="video-demo">
                     <source
-                      src="https://video.wixstatic.com/video/6a2f02_0604c009df4a414ab34b85db561b25fe/720p/mp4/file.mp4"
+                      src="assets/vid.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -447,8 +459,8 @@
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
           <img
-            class="w-full md:w-4/6 z-50 md:ml-40"
-            src="assets/Illustration.png"
+            class="w-full md:w-4/5 z-50 md:ml-40 opacity-100"
+            src="assets/hero-image.png"
           />
         </div>
       </div>
@@ -509,38 +521,40 @@
         >
           Tokenomics
         </h1>
-        <div class="w-full mb-4">
+        <div class="w-full mb-10">
           <div
             class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
           ></div>
         </div>
-        <div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
+        <div class="flex flex-wrap text-center">
             <p class="text-gray-600 mb-8 text-lg lg:text-2xl">
-              Max Supply: 10
-              <br />
-              Name: Little Angry Bunny V2
-              <br />
-              7% Redistribution 
-              <br />
-              100% Community Driven token
+              BURN RATE 4% rate per transaction is discharge which eventually goes to burn wallet
               <br />
               <br />
-              82% Total Burnt 
+              REWARDS 7% reward per transaction is given to all strong holders to punish paper hands.
               <br />
               <br />
-              14% Total Supply
+              An exlusive lottery game among holders who own a minimum token of 500 quintillion
+              (1 lucky winner will be given a certain amount of LAB token every day)
               <br />
               <br />
-              Contract Address: 0x07f5ceded6b3dba557b366
-              <br />3edc8941fb37b63945
+              Anti whale mechanics with a max buy and sell of 2 sextillion
+              <br />
+              <br />
+              CONTRACT ADDRESS
+              <br />
+              0x07f5ceded6b3dba557b3663edc8941fb37b63945
+              <br />
+              <br />
+              TOTAL SUPPLY 
+              <br />
+              10,000,000,000,000,000,000,000,000,
+              <br />
+              <br />
+              INITIAL BURN 70% of the total supply
             </p>
           </div>
-          <div class="w-full sm:w-1/2 p-6">
-            <img src="assets/tokemics.webp" alt="tokemics picture" />
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Wave -->
@@ -601,137 +615,56 @@
         ></div>
       </div>
 
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <!-- card -->
-        <div class="w-full md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
-          <div
-            class="
-              flex-1
-              bg-white
-              rounded-t rounded-b-none
-              overflow-hidden
-              shadow
-            "
-          >
-            <a
-              href="#"
-              class="flex flex-wrap no-underline hover:no-underline py-12"
-            >
-              <div class="w-full font-bold text-2xl text-gray-800 px-6">
-                Q1 2021
-              </div>
-              <p class="text-gray-800 text-lg text-base px-6 mb-5">
-                -Launch on pancakeswap
-                <br />
-                -Website Launch and social media
-                <br />
-                -700 Telegram Members
-                <br />
-                -700 Holders -Marketing CMS,Twitter,Tiktok, etc.
-              </p>
-            </a>
+      <div class="container">
+        <div class="card-carousel">
+          <div class="card" id="1">
+            <h1>Quarter 3.</h1>
+            <p>Little Angry Bunny  promises to explore every avenue and generate exposure while 
+              growing the project and developing further utilities.</p>
+            <br />
+            <p>Partnership with other big companies</p>
+            <br />
+            <p>250,000 holders</p>
+            <br />
+            <p>LAB own wallet/app release </p>
+          </div>
+          <div class="card" id="2">
+            <h1>Quarter 4.</h1>
+            <p>PARTY TO THE MOON</p>
+            <br />
+            <p>Atleast 500,0000 Holders</p>
+            <br />
+            <p>Marketing to list on Binance</p>
+            <br />
+            <p>Everyones Dream (LAMBO)</p>
+            <br />
+          </div>
+          <div class="card" id="3">
+            <div class="image-container"></div>
+            <p>Little Angry Bunny V2 Roadmap. Swipe to view.</p>
+          </div>  
+          <div class="card" id="4">
+            <h1>Quarter 1.</h1>
+            <p>Launching Token</p>
+            <br />
+            <p>2500 HoldersAirdrop for joining</p>
+            <br />
+            <p>Coingecko and Coinmarketcap Listed Logo on Trust Wallet Construction of new website</p>
+            <br />
+          </div>
+          <div class="card" id="5">
+            <h1>Quarter 2.</h1>
+            <p>Following launch, the team will shift efforts to maintaining a high consoldiation and floor 
+              in market cap, gaining new holders and maximum exposure.  
+              This will allow for the project to get " to the next level " 
+              following every new breakthrough.</p>
+            <br />
+            <p>Collaborate with artist and big influencer At least 50,000 holders</p>
           </div>
         </div>
-
-        <!-- card -->
-        <div class="w-full md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
-          <div
-            class="
-              flex-1
-              bg-white
-              rounded-t rounded-b-none
-              overflow-hidden
-              shadow
-            "
-          >
-            <a
-              href="#"
-              class="flex flex-wrap no-underline hover:no-underline py-12"
-            >
-              <div class="w-full font-bold text-2xl text-gray-800 px-6">
-                Q2 2021
-              </div>
-              <p class="text-gray-800 text-lg text-base px-6 mb-5">
-                -5000+ Holders
-                <br />
-                -5000+ Telegram Mebers
-                <br />
-                -CMC and CG apply listing
-                <br />
-                -Website Upgrade
-                <br />
-                -Marketing campaign
-              </p>
-            </a>
-          </div>
-        </div>
-
-        <!-- card -->
-        <div class="w-full md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
-          <div
-            class="
-              flex-1
-              bg-white
-              rounded-t rounded-b-none
-              overflow-hidden
-              shadow
-            "
-          >
-            <a
-              href="#"
-              class="flex flex-wrap no-underline hover:no-underline py-12"
-            >
-              <div class="w-full font-bold text-2xl text-gray-800 px-6">
-                Q3 2021
-              </div>
-              <p class="text-gray-800 text-lg text-base px-6 mb-5">
-                -7000 Holders
-                <br />
-                -7000 Telegram Members
-                <br />
-                -CEX listing small exchanges
-                <br />
-                -Partnership big influencer
-                <br />
-                -Huge marketing Push
-              </p>
-            </a>
-          </div>
-        </div>
-
-        <!-- card -->
-        <div class="w-full md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
-          <div
-            class="
-              flex-1
-              bg-white
-              rounded-t rounded-b-none
-              overflow-hidden
-              shadow
-            "
-          >
-            <a
-              href="#"
-              class="flex flex-wrap no-underline hover:no-underline py-12"
-            >
-              <div class="w-full font-bold text-2xl text-gray-800 px-6">
-                Q4 2021
-              </div>
-              <p class="text-gray-800 text-lg text-base px-6 mb-5">
-                -70000+ Holders
-                <br />
-                -CEX Listing
-                <br />
-                -NFT
-                <br />
-                -Binance Listing ( Dream)
-                <br />
-                -Party on moon
-              </p>
-            </a>
-          </div>
-        </div>
+        <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
       </div>
+     
       <div id="aboutus"></div>
     </section>
 
@@ -987,6 +920,330 @@
         }
         return false;
       }
+    </script>
+
+    <script>
+      const cardsContainer = document.querySelector(".card-carousel");
+const cardsController = document.querySelector(".card-carousel + .card-controller")
+
+class DraggingEvent {
+  constructor(target = undefined) {
+    this.target = target;
+  }
+  
+  event(callback) {
+    let handler;
+    
+    this.target.addEventListener("mousedown", e => {
+      e.preventDefault()
+      
+      handler = callback(e)
+      
+      window.addEventListener("mousemove", handler)
+      
+      document.addEventListener("mouseleave", clearDraggingEvent)
+      
+      window.addEventListener("mouseup", clearDraggingEvent)
+      
+      function clearDraggingEvent() {
+        window.removeEventListener("mousemove", handler)
+        window.removeEventListener("mouseup", clearDraggingEvent)
+      
+        document.removeEventListener("mouseleave", clearDraggingEvent)
+        
+        handler(null)
+      }
+    })
+    
+    this.target.addEventListener("touchstart", e => {
+      handler = callback(e)
+      
+      window.addEventListener("touchmove", handler)
+      
+      window.addEventListener("touchend", clearDraggingEvent)
+      
+      document.body.addEventListener("mouseleave", clearDraggingEvent)
+      
+      function clearDraggingEvent() {
+        window.removeEventListener("touchmove", handler)
+        window.removeEventListener("touchend", clearDraggingEvent)
+        
+        handler(null)
+      }
+    })
+  }
+  
+  // Get the distance that the user has dragged
+  getDistance(callback) {
+    function distanceInit(e1) {
+      let startingX, startingY;
+      
+      if ("touches" in e1) {
+        startingX = e1.touches[0].clientX
+        startingY = e1.touches[0].clientY
+      } else {
+        startingX = e1.clientX
+        startingY = e1.clientY
+      }
+      
+
+      return function(e2) {
+        if (e2 === null) {
+          return callback(null)
+        } else {
+          
+          if ("touches" in e2) {
+            return callback({
+              x: e2.touches[0].clientX - startingX,
+              y: e2.touches[0].clientY - startingY
+            })
+          } else {
+            return callback({
+              x: e2.clientX - startingX,
+              y: e2.clientY - startingY
+            })
+          }
+        }
+      }
+    }
+    
+    this.event(distanceInit)
+  }
+}
+
+
+class CardCarousel extends DraggingEvent {
+  constructor(container, controller = undefined) {
+    super(container)
+    
+    // DOM elements
+    this.container = container
+    this.controllerElement = controller
+    this.cards = container.querySelectorAll(".card")
+    
+    // Carousel data
+    this.centerIndex = (this.cards.length - 1) / 2;
+    this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
+    this.xScale = {};
+    
+    // Resizing
+    window.addEventListener("resize", this.updateCardWidth.bind(this))
+    
+    if (this.controllerElement) {
+      this.controllerElement.addEventListener("keydown", this.controller.bind(this))      
+    }
+
+    
+    // Initializers
+    this.build()
+    
+    // Bind dragging event
+    super.getDistance(this.moveCards.bind(this))
+  }
+  
+  updateCardWidth() {
+    this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
+    
+    this.build()
+  }
+  
+  build(fix = 0) {
+    for (let i = 0; i < this.cards.length; i++) {
+      const x = i - this.centerIndex;
+      const scale = this.calcScale(x)
+      const scale2 = this.calcScale2(x)
+      const zIndex = -(Math.abs(i - this.centerIndex))
+      
+      const leftPos = this.calcPos(x, scale2)
+     
+      
+      this.xScale[x] = this.cards[i]
+      
+      this.updateCards(this.cards[i], {
+        x: x,
+        scale: scale,
+        leftPos: leftPos,
+        zIndex: zIndex
+      })
+    }
+  }
+  
+  
+  controller(e) {
+    const temp = {...this.xScale};
+      
+      if (e.keyCode === 39) {
+        // Left arrow
+        for (let x in this.xScale) {
+          const newX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
+
+          temp[newX] = this.xScale[x]
+        }
+      }
+      
+      if (e.keyCode == 37) {
+        // Right arrow
+        for (let x in this.xScale) {
+          const newX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
+
+          temp[newX] = this.xScale[x]
+        }
+      }
+      
+      this.xScale = temp;
+      
+      for (let x in temp) {
+        const scale = this.calcScale(x),
+              scale2 = this.calcScale2(x),
+              leftPos = this.calcPos(x, scale2),
+              zIndex = -Math.abs(x)
+
+        this.updateCards(this.xScale[x], {
+          x: x,
+          scale: scale,
+          leftPos: leftPos,
+          zIndex: zIndex
+        })
+      }
+  }
+  
+  calcPos(x, scale) {
+    let formula;
+    
+    if (x < 0) {
+      formula = (scale * 100 - this.cardWidth) / 2
+      
+      return formula
+
+    } else if (x > 0) {
+      formula = 100 - (scale * 100 + this.cardWidth) / 2
+      
+      return formula
+    } else {
+      formula = 100 - (scale * 100 + this.cardWidth) / 2
+      
+      return formula
+    }
+  }
+  
+  updateCards(card, data) {
+    if (data.x || data.x == 0) {
+      card.setAttribute("data-x", data.x)
+    }
+    
+    if (data.scale || data.scale == 0) {
+      card.style.transform = `scale(${data.scale})`
+
+      if (data.scale == 0) {
+        card.style.opacity = data.scale
+      } else {
+        card.style.opacity = 1;
+      }
+    }
+   
+    if (data.leftPos) {
+      card.style.left = `${data.leftPos}%`        
+    }
+    
+    if (data.zIndex || data.zIndex == 0) {
+      if (data.zIndex == 0) {
+        card.classList.add("highlight")
+      } else {
+        card.classList.remove("highlight")
+      }
+      
+      card.style.zIndex = data.zIndex  
+    }
+  }
+  
+  calcScale2(x) {
+    let formula;
+   
+    if (x <= 0) {
+      formula = 1 - -1 / 5 * x
+      
+      return formula
+    } else if (x > 0) {
+      formula = 1 - 1 / 5 * x
+      
+      return formula
+    }
+  }
+  
+  calcScale(x) {
+    const formula = 1 - 1 / 5 * Math.pow(x, 2)
+    
+    if (formula <= 0) {
+      return 0 
+    } else {
+      return formula      
+    }
+  }
+  
+  checkOrdering(card, x, xDist) {    
+    const original = parseInt(card.dataset.x)
+    const rounded = Math.round(xDist)
+    let newX = x
+    
+    if (x !== x + rounded) {
+      if (x + rounded > original) {
+        if (x + rounded > this.centerIndex) {
+          
+          newX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex
+        }
+      } else if (x + rounded < original) {
+        if (x + rounded < -this.centerIndex) {
+          
+          newX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex
+        }
+      }
+      
+      this.xScale[newX + rounded] = card;
+    }
+    
+    const temp = -Math.abs(newX + rounded)
+    
+    this.updateCards(card, {zIndex: temp})
+
+    return newX;
+  }
+  
+  moveCards(data) {
+    let xDist;
+    
+    if (data != null) {
+      this.container.classList.remove("smooth-return")
+      xDist = data.x / 250;
+    } else {
+
+      
+      this.container.classList.add("smooth-return")
+      xDist = 0;
+
+      for (let x in this.xScale) {
+        this.updateCards(this.xScale[x], {
+          x: x,
+          zIndex: Math.abs(Math.abs(x) - this.centerIndex)
+        })
+      }
+    }
+
+    for (let i = 0; i < this.cards.length; i++) {
+      const x = this.checkOrdering(this.cards[i], parseInt(this.cards[i].dataset.x), xDist),
+            scale = this.calcScale(x + xDist),
+            scale2 = this.calcScale2(x + xDist),
+            leftPos = this.calcPos(x + xDist, scale2)
+      
+      
+      this.updateCards(this.cards[i], {
+        scale: scale,
+        leftPos: leftPos
+      })
+    }
+  }
+}
+
+const carousel = new CardCarousel(cardsContainer)
     </script>
   </body>
 </html>
