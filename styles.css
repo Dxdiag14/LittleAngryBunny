@@ -16,6 +16,18 @@
   
 
   
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 300px;
+    --card-height: 450px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    transition: filter .3s ease;
+  }
   
   @media screen and (max-width: 640px) {
     .card-carousel {
