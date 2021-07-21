@@ -66,14 +66,7 @@
   .card.highlight {
     filter: brightness(1)
   }
-  
-  
 
-  
-  .card:nth-of-type(3) .image-container {
-    background-image: url(../assets/v2.png)
-  }
- 
   
   .image-container {
     width: 8em;
@@ -119,3 +112,6 @@
   h2 a {
     color: #f5b916
   }
+
+  /*Text animation*/
+  
